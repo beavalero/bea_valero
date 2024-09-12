@@ -1,0 +1,763 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue Regular;
+  cursor: url(images/circle-cursor.png), auto;
+}
+
+
+/* HEADER */
+header{
+    background-color: white;
+    height: 40px;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 2px solid #ff0000;
+}
+
+#home{
+  text-transform: uppercase;
+  color: #ff0000;
+  font-size: 14pt;
+  text-decoration: none;
+}
+
+#home:hover{
+  text-decoration: line-through;
+}
+
+.menu a{
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu{
+  font-size: 50px;
+  cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
+  display: none;
+  transition: 0.4s;
+}
+
+.mostrar-menu{
+  order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+  color: red;
+}
+
+#check{
+  display: none;
+}
+
+
+/* MAIN */
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+  transition: opacity 3s ease-out;
+  /* visibility: hidden; Inicialmente oculto */
+}
+
+h4{
+  font-family: Helvetica Neue Italic;
+  margin-top: 1%;
+  font-size: 14pt;
+  color: #363636;
+}
+
+.spinner {
+  border: 4px solid #cfcfcf;
+  border-top: 4px solid #ff0000;
+  border-radius: 80%;
+  width: 40px;
+  height: 40px;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#body {
+  display: none; /* Oculta el contenido hasta que se cargue la página */
+}
+
+body{
+  background-color: rgb(36,36,36);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#body2{
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+}
+
+#main{
+  background-color: rgb(255, 255, 255);
+  width: 90%; /* El contenedor ocupa el 90% del ancho del viewport */
+  max-width: 1500px; /* Ancho máximo del contenedor */
+  /* margin: 0 auto; */
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+#info{
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 70%;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    top: 40px; /* Altura del header fijo */
+    z-index: 900; /* Asegura que el div sticky esté por debajo del header */
+}
+
+h3{
+  margin-top: 5pt;
+  font-family: Helvetica Neue Italic;
+  font-size: 10pt;
+  opacity: 40%;
+}
+
+.cursiva{
+  font-family: Helvetica Neue Italic;
+}
+
+p{
+  margin-top: 10pt;
+  margin-right: 10%;
+  margin-bottom: 15pt;
+  text-align: justify;
+  /* hyphens: auto; */
+  word-spacing: -0.5px; /* Ajusta según sea necesario */
+  letter-spacing: 0.5px; /* Ajusta según sea necesario */
+}
+
+#proyecto{
+  background-color: rgb(36, 36, 36);
+    width: 70%;
+    padding: 2%;
+    /* border-left: 2px solid #b4b4b4; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#diseño{
+  background-color: rgb(0, 0, 0);
+    width: 70%;
+    padding: 2%;
+    /* border-left: 2px solid #b4b4b4; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: url(images/circle-cursor-grey.png), auto;
+}
+
+#diseño img{
+  cursor: url(images/circle-cursor-grey.png), auto;
+}
+
+#proyecto img > .image-container{
+  display: block;
+  max-width: 110%;
+  padding: 10px;
+}
+
+.images-peque{
+  width: 40%;
+  margin-left: 2.5%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.images-peque2{
+  margin-top: -32%;
+  margin-left: 2.5%;
+  height: auto;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.pg{
+  margin-left: 47%;
+  /* margin-top: -25%; */
+}
+
+#cartel{
+  margin-left: -2.8%;
+}
+#cartel2{
+  margin-left: 0;
+}
+
+#cartel3{
+  margin-top: -2.9%;
+  margin-left: -2.9%;
+}
+
+#info img:hover{
+  cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
+}
+
+a{
+  text-decoration: none;
+  cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
+}
+
+a:link{
+  color: black;
+}
+
+a:visited{
+  color: black;
+}
+
+a:hover{
+  color: red;
+}
+
+a:active{
+  text-decoration: line-through;
+}
+
+/* ICONOS */
+.iconos{
+  display: flex;
+  align-items: flex-start;
+  align-self: center;
+  flex-direction: column;
+}
+
+li{
+  opacity: 50%;
+  font-size: 10pt;
+  margin-bottom: 1%;
+  display: flex;
+  align-items: center;
+}
+
+li img{
+  margin-right: 3%;
+}
+
+summary{
+  text-decoration: underline;
+}
+
+summary:hover{
+  color: #ff0000;
+  text-decoration: none;
+  cursor: url(images/circle-cursor-hover.png), auto;
+}
+
+/* IMAGEN CD */
+.image-containerr {
+  position: relative;
+}
+
+.image-containerr img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* transition: opacity 0.1s ease-in-out; */
+}
+
+.image-containerr img.second-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.image-containerr:hover img.first-image {
+  opacity: 0;
+}
+
+.image-containerr:hover img.second-image {
+  opacity: 1;
+}
+
+/* POSTERS */
+
+.image-container {
+  display: flex;
+  position: relative;
+  height: 33vw; /* Ajusta la altura según tus necesidades */
+  width: 130%;
+  margin-top: 2%;
+  margin-left: 2%;
+  max-width: 110%; /* Ajusta el ancho máximo del contenedor */
+}
+
+.image-container img {
+  flex: 0 0 auto;
+  max-width: 33.33%; /* Para que ocupen cada una un tercio del contenedor */
+  position: absolute;
+  opacity: 0; /* Empezarán con opacidad 0 para luego aparecer */
+  /* transition: opacity 0.5s ease-in-out; */
+}
+
+/* Ajusta las posiciones para que se solapen ligeramente */
+.image-container img:nth-child(1) {
+  left: 0;
+  transform: rotate(-3deg);
+  z-index: 1; /* La primera imagen debe estar más al frente */
+}
+
+.image-container img:nth-child(2) {
+  left: calc(33.33% - 20px); /* Ajusta la posición de acuerdo al solapamiento */
+  transform: rotate(8deg);
+  z-index: 1;
+}
+
+.image-container img:nth-child(3) {
+  left: calc(66.66% - 30px); /* Ajusta la posición de acuerdo al solapamiento */
+  transform: rotate(-3deg);
+  z-index: 2; /* La última imagen debe estar más atrás */
+}
+
+/* Animación para hacer aparecer las imágenes una a una */
+.image-container img.visible {
+  opacity: 3;
+}
+
+/* LÍNEA ROJA */
+.linea-roja {
+  width: 100%;
+  height: 2px; /* Grosor de la línea */
+  background-color: red; /* Color de la línea */
+  margin: 0 auto; /* Ajusta los márgenes si es necesario */
+}
+
+img{
+  /* background-color: #ad6a6a; */
+  max-width: 100%; /* Asegura que las imágenes no se desborden */
+  height: auto; /* Ajusta automáticamente la altura */
+}
+
+footer{
+    background-color: #ffffff;
+    /* width: 100%; */
+    height: 60px;
+    padding: 0 30px;
+    margin-top: 1%;
+    bottom:  0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #000000;
+    clear: both; /* Asegura que ningún contenido flote a su alrededor */
+}
+
+.span0{
+  text-align: left;
+}
+
+.span1{
+  text-align: center;
+}
+
+.span2{
+  text-align: right;
+}
+
+
+
+.back-to-top {
+  position: sticky; /* Fija la posición de la flecha en la pantalla */
+  bottom: 20px; /* Distancia desde la parte inferior */
+  left: 95%; /* Distancia desde la derecha */
+  width: 50px; /* Ancho de la imagen */
+  height: 50px; /* Altura de la imagen */
+  cursor: pointer; /* Cambia el cursor a un puntero */
+  z-index: 1000; /* Asegura que la flecha esté sobre otros elementos */
+  transition: opacity 0.5s; /* Transición de opacidad */
+  display: block;
+  margin-top: -4.3%;
+}
+
+/* Mostrar el botón cuando el usuario ha desplazado hacia abajo */
+body.scrolled .back-to-top {
+    display: block; /* Mostrar el botón */
+}
+
+/* Para hacer el scroll suave */
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+.back-to-top:hover {
+   cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
+}
+
+/* CAMBIO IDIOMA */
+
+/* styles.css */
+[data-lang] {
+  display: none;
+}
+
+html[lang="en"] [data-lang="en"],
+html[lang="es"] [data-lang="es"] {
+  display: block;
+}
+
+.lang-btn {
+  padding: 0px 4px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: url(images/circle-cursor-hover.png), auto;
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.lang-btn.active {
+  border-bottom: 2px solid #ff0000;
+  color: #ff0000;
+}
+
+.lang-btn:hover {
+  color: #ff0000;
+}
+
+
+  /* RESPONSIVE */
+
+@media(max-width:1200px){
+  /* HEADER */
+  header{
+    background-color: white;
+    height: 90px;
+    padding: 10px 50px;
+    font-size: 30pt;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 2px solid #ff0000;
+  }
+
+  .mostrar-menu,
+  .esconder-menu{
+    display: block;
+    font-size: 50pt;
+  }
+
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.5s;
+  }
+
+  label{
+    font-size: 50pt;
+  }
+
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+
+  .esconder-menu{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  #check:checked ~ .menu{
+    right: 0;
+  }
+
+  .lang-btn {
+    font-size: 24pt;
+  }
+
+  /* MAIN */
+
+  body{
+    background-color: #ffffff;
+  }
+
+  #body2{
+    background-color: #ffffff;
+  }
+
+  #main {
+    background-color: #ffffff;
+    flex-direction: column; /* Cambia a column para versiones móviles */
+  }
+
+  #info, #proyecto, #diseño {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 30px; /* Espacio entre las secciones */
+    position: relative;
+    background-color: #ffffff;
+    border-left: 0px solid #ffffff;
+  }
+
+  #diseño{
+    margin-top: 5%;
+    margin-left: 4%;
+    cursor: url(images/circle-cursor.png), auto;
+  }
+
+  #diseño img{
+    /* margin-top: 3%; */
+    /* margin-right: 6%; */
+    cursor: url(images/circle-cursor.png), auto;
+  }
+
+  #main img > .image2 {
+    width: 100%;
+    height: auto;
+  }
+
+  #proyecto img{
+    max-width: 100%; /* Asegura que las imágenes no se desborden */
+    height: auto; /* Ajusta automáticamente la altura */
+  }
+
+  #info{
+    font-size: 16pt;
+    margin-top: 3%;
+    margin-left: 3%;
+    padding: 25px;
+  }
+
+  #info img{
+    width: 5%;
+  }
+
+  #poster_anim{
+    clip-path: inset(2% 5% 2% 5%);
+    margin-top: -3px;
+    margin-left: -5%;
+    margin-right: -2%;
+    width: 90%;
+  }
+
+  .images-peque{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .images-peque2{
+    margin-top: 0%;
+    width: 58%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .image2{
+    width: 53%;
+    margin-top: 2%;
+    margin-left: 1%;
+  }
+
+  .pg{
+    width: 85%;
+    margin-left: 15%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+  }
+
+  .xenia{
+    clip-path: inset(14% 16% 14% 16%);
+  }
+
+  .web{
+    width: 140%;
+    margin-bottom: 3%;
+    clip-path: inset(4.9% 13.8% 4.9% 13.8%);
+  }
+
+  #cartel{
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+
+  #cartel3{
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+
+  .imagen-responsiva{
+    content: url('images/music/poster_anim2.gif');
+  }
+
+  .imagen-responsiva2{
+    /* width: 200px; */
+    content: url('images/design/tfg/Mesa\ de\ trabajo\ 1\ copia\ 5-2.jpg');
+  }
+
+  .imagen-responsiva3{
+    content: url('images/design/tfg/Mesa\ de\ trabajo\ 1\ copia\ 7-2.jpg');
+  }
+
+  .imagen-responsiva4{
+    content: url('images/design/tfg/Mesa\ de\ trabajo\ 28.png');
+  }
+
+  .linea-roja {
+    width: 100%;
+    height: 2px; /* Grosor de la línea */
+    background-color: red; /* Color de la línea */
+    margin: 0 auto; /* Ajusta los márgenes si es necesario */
+  }
+
+  iframe{
+    width: 100%;
+    height: 450px;
+  }
+
+  .back-to-top{
+    display: none;
+  }
+
+/* posters */
+.image-container {
+  display: flex;
+  position: relative;
+  height: 145vw; /* Ajusta la altura según tus necesidades */
+  width: 50%;
+  margin-top: 2%;
+  margin-left: 2%;
+  max-width: 50%;
+}
+
+.image-container img {
+  flex: 0 0 auto;
+  max-width: 60%; /* Para que ocupen cada una un tercio del contenedor */
+  position: absolute;
+  opacity: 0; /* Empezarán con opacidad 0 para luego aparecer */
+  /* transition: opacity 0.5s ease-in-out; */
+}
+
+/* Ajusta las posiciones para que se solapen ligeramente */
+.image-container img:nth-child(1) {
+  left: 3%;
+  top: 2%;
+  transform: rotate(3deg);
+  z-index: 1; /* La primera imagen debe estar más al frente */
+}
+
+.image-container img:nth-child(2) {
+  left: 98%;
+  top: 20%;
+  transform: rotate(-5deg);
+  z-index: 1;
+}
+
+.image-container img:nth-child(3) {
+  left: 18%;
+  top: 52%;
+  transform: rotate(7deg);
+  z-index: 2; /* La última imagen debe estar más atrás */
+}
+
+/* Animación para hacer aparecer las imágenes una a una */
+.image-container img.visible {
+  opacity: 3;
+}
+
+footer{
+  height: 140px;
+  padding: 60px 70px;
+  margin-top: 1%;
+  bottom:  0;
+  font-size: 26pt;
+  margin-bottom: 220px;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 2px solid #000000;
+  clear: both; /* Asegura que ningún contenido flote a su alrededor */
+}
+
+.span0{
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+.span1{
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+.span2{
+  text-align: left;
+  margin-bottom: 5%;
+}
+}
+
+/* fonts!! */
+
+@font-face {
+  font-family: Helvetica Neue Regular;
+  src: url(fonts/HelveticaNeueRoman.otf);
+}
+
+@font-face {
+  font-family: Helvetica Neue Italic;
+  src: url(fonts/HelveticaNeueItalic.ttf);
+}
+
+@font-face {
+  font-family: Helvetica Neue Thin Italic;
+  src: url(fonts/HelveticaNeueThinItalic.otf);
+}
+
+@font-face {
+  font-family: Femme Fatale;
+  src: url(fonts/SK\ Femme\ Fatale\ Trial.ttf);
+}

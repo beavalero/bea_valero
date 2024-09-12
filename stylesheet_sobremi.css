@@ -1,0 +1,675 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue Regular;
+  cursor: url(images/circle-cursor.png), auto;
+}
+  
+  /* HEADER */
+  header{
+      background-color: white;
+      height: 40px;
+      padding: 0 40px;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      border-bottom: 2px solid #ff0000;
+  }
+  
+  #home{
+    text-transform: uppercase;
+    color: #ff0000;
+    font-size: 18pt;
+    text-decoration: none;
+  }
+  
+  #home:hover{
+    text-decoration: line-through;
+  }
+  
+  .menu a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+  }
+  
+  .mostrar-menu,
+  .esconder-menu{
+    font-size: 50px;
+    cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
+    display: none;
+    transition: 0.4s;
+  }
+  
+  .mostrar-menu{
+    order: 1;
+  }
+  
+  .menu a:hover,
+  .mostrar-menu:hover,
+  .esconder-menu:hover{
+    color: red;
+  }
+  
+  #check{
+    display: none;
+  }
+  
+  
+  /* MAIN */
+
+  #loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    transition: opacity 3s ease-out;
+    /* visibility: hidden; Inicialmente oculto */
+  }
+  
+  h4{
+    font-family: Helvetica Neue Italic;
+    margin-top: 1%;
+    font-size: 14pt;
+    color: #363636;
+  }
+  
+  .spinner {
+    border: 4px solid #cfcfcf;
+    border-top: 4px solid #ff0000;
+    border-radius: 80%;
+    width: 40px;
+    height: 40px;
+    animation: spin 4s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  #body {
+    display: none; /* Oculta el contenido hasta que se cargue la página */
+  }
+  
+  body{
+    /* background-color: rgb(196, 176, 176); */
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  #main{
+    background-color: rgb(255, 255, 255);
+    width: 90%; /* El contenedor ocupa el 90% del ancho del viewport */
+    max-width: 1500px; /* Ancho máximo del contenedor */
+    /* margin: 0 auto; */
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  
+  #yop{
+    position: fixed;
+    width: 22%;
+    left: 75%;
+    top: 48%;
+  }
+
+  #info{
+      /* background-color: rgb(244, 180, 180); */
+      width: 20%;
+      height: 60%;
+      padding: 10px;
+      margin-top: 2.5%;
+      margin-left: 3%;
+      position: sticky;
+      top: 0;
+      top: 40px; /* Altura del header fijo */
+      z-index: 900; /* Asegura que el div sticky esté por debajo del header */
+  }
+
+  #sobremi{
+    width: 60%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 20%;
+    line-height: 1.3;
+    text-align: justify;
+  }
+
+  #sobremi p{
+    margin-right: 20%;
+  }
+
+  #infoart{
+    /* background-color: rgb(244, 180, 180); */
+    width: 20%;
+    height: 70%;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    top: 40px; /* Altura del header fijo */
+    z-index: 900; /* Asegura que el div sticky esté por debajo del header */
+}
+
+
+#infoart p{
+  margin-top: 10pt;
+  margin-right: 10%;
+  margin-bottom: 10pt;
+  text-align: justify;
+}
+
+#infoart img:hover{
+  cursor: url(images/circle-cursor-hover.png), auto;
+}
+
+h1{
+  font-family: Helvetica Neue Regular;
+  font-size: 15pt;
+}
+
+h2, h3{
+  font-family: Helvetica Neue Italic;
+  font-size: 13pt;
+}
+
+.cursiva{
+  font-family: Helvetica Neue Italic;
+}
+
+/* COLUMNA */
+.columna{
+  width: 65%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.linea-gris{
+  width: 70%;
+  height: 2px; /* Grosor de la línea */
+  background-color: #ddd;
+  border-radius: 3px;
+  margin-bottom: 2%;
+}
+
+/* BARRAS */
+.container {
+  width: 60%;
+  margin-bottom: 3%;
+  /* margin: 10px; */
+}
+.line-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.line-label {
+    width: 20%; /* Ajusta el ancho del texto si es necesario */
+    font-size: 14px;
+    color: #333;
+    margin-right: 10px; /* Espacio entre el texto y la barra */
+}
+.line {
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-left: 10%;
+    /* flex: 1; La barra ocupa el espacio disponible */
+    position: relative;
+}
+.line-60 {
+    width: 55%;
+}
+.line-40 {
+    width: 70%;
+}
+.line-100 {
+    width: 45%;
+}
+
+
+.infanta{
+  width: 40%;
+  position: absolute;
+  top: -6%;
+  left: 18%;
+}
+
+/* .nevermet{
+  width: 30%;
+  position: absolute;
+  margin-top: 5%;
+  left: 22%;
+  mix-blend-mode: multiply;
+} */
+
+  #proyecto{
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    padding: 2%;
+    border-left: 2px solid #b4b4b4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #dibujos{
+    width: 70%;
+      padding: 2%;
+      border-left: 2px solid #b4b4b4;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap;
+  }
+
+  #dibujos div{
+    width: 45%;
+    height: auto;
+  }
+
+  #dibujos p{
+    width: 110%;
+    text-align: end;
+  }
+  
+  img{
+    /* background-color: #ad6a6a; */
+    max-width: 110%; /* Asegura que las imágenes no se desborden */
+    height: auto; /* Ajusta automáticamente la altura */
+  }
+
+  .animation{
+    width: 110%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .animation img{
+    margin-bottom: 2%;
+  }
+
+  a{
+    text-decoration: none;
+    cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
+  }
+  
+  a:link{
+    color: black;
+  }
+  
+  a:visited{
+    color: black;
+  }
+  
+  a:hover{
+    color: red;
+  }
+  
+  a:active{
+    text-decoration: line-through;
+  }
+
+  /* LÍNEA ROJA */
+.linea-roja {
+  width: 100%;
+  height: 2px; /* Grosor de la línea */
+  background-color: red; /* Color de la línea */
+  margin: 0 auto; /* Ajusta los márgenes si es necesario */
+}
+  
+footer{
+  background-color: #ffffff;
+  /* width: 100%; */
+  height: 60px;
+  padding: 0 30px;
+  margin-top: 1%;
+  bottom:  0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #000000;
+  clear: both; /* Asegura que ningún contenido flote a su alrededor */
+}
+
+.span1{
+text-align: center;
+}
+
+.span2{
+text-align: right;
+}
+  
+  
+.back-to-top {
+  position: sticky; /* Fija la posición de la flecha en la pantalla */
+  bottom: 20px; /* Distancia desde la parte inferior */
+  left: 95%; /* Distancia desde la derecha */
+  width: 50px; /* Ancho de la imagen */
+  height: 50px; /* Altura de la imagen */
+  cursor: url(images/circle-cursor-hover.png), auto;
+  z-index: 1000; /* Asegura que la flecha esté sobre otros elementos */
+  /* transition: opacity 0.5s; Transición de opacidad */
+  display: block;
+  margin-top: -4.3%;
+}
+
+/* Mostrar el botón cuando el usuario ha desplazado hacia abajo */
+body.scrolled .back-to-top {
+    display: block; /* Mostrar el botón */
+}
+
+/* Para hacer el scroll suave */
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+/* CAMBIO IDIOMA */
+
+/* styles.css */
+[data-lang] {
+  display: none;
+}
+
+html[lang="en"] [data-lang="en"],
+html[lang="es"] [data-lang="es"] {
+  display: block;
+}
+
+.lang-btn {
+  padding: 0px 4px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: url(images/circle-cursor-hover.png), auto;
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.lang-btn.active {
+  border-bottom: 2px solid #ff0000;
+  color: #ff0000;
+}
+
+.lang-btn:hover {
+  color: #ff0000;
+}
+
+  
+  
+  
+    /* RESPONSIVE */
+
+  @media(max-width:1200px){
+    /* HEADER */
+    header{
+      background-color: white;
+      height: 90px;
+      padding: 10px 50px;
+      font-size: 30pt;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      border-bottom: 2px solid #ff0000;
+    }
+  
+    .mostrar-menu,
+    .esconder-menu{
+      display: block;
+      font-size: 50pt;
+    }
+  
+    .menu{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: white;
+      right: -100%;
+      top: 0;
+      text-align: center;
+      padding: 100px 0px;
+      z-index: 100;
+      transition: 0.5s;
+    }
+
+    label{
+      font-size: 50pt;
+    }
+  
+    .menu a{
+      display: block;
+      padding: 20px;
+    }
+  
+    .esconder-menu{
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+  
+    #check:checked ~ .menu{
+      right: 0;
+    }
+
+    .lang-btn {
+      font-size: 24pt;
+    }
+    
+    /* MAIN */
+  
+    body{
+      background-color: #ffffff;
+      font-size: 16pt;
+    }
+  
+    #main {
+      width: 90%;
+      background-color: #ffffff;
+      flex-direction: column; /* Cambia a column para versiones móviles */
+    }
+  
+    #info, #proyecto {
+      width: 95%; /* Ocupa todo el ancho disponible */
+      margin-bottom: 10px; /* Espacio entre las secciones */
+      margin-left: 2%;
+      position: relative;
+      /* background-color: #ffffff; */
+      border-left: 0px solid #ffffff;
+    }
+  
+    #main img >#yop{
+      /* width: 100%; */
+      height: auto;
+      margin-left: 10%;
+    }
+
+    #info{
+      width: 95%;
+      margin-top: 5%;
+      margin-bottom: 2%;
+      font-size: 16pt;
+      /* margin-top: 1%; */
+      margin-left: 7%;
+    }
+
+    h1{
+      font-size: 24pt;
+    }
+
+    #infoart{
+      width: 90%;
+      font-size: 16pt;
+      /* margin-top: 1%; */
+      margin-left: 3%;
+      position: relative;
+    }
+
+    p{
+      /* background-color: antiquewhite; */
+      margin-top: 5pt;
+      margin-right: 10%;
+      /* margin-left: 10%; */
+      margin-bottom: 50pt;
+      text-align: justify;
+    }
+
+    #sobremi p, h2{
+      /* background-color: antiquewhite; */
+      margin-top: 5pt;
+      margin-right: 10%;
+      margin-left: 10%;
+      margin-bottom: 10pt;
+      text-align: justify;
+    }
+
+    #sobremi{
+      width: 90%;
+      margin-top: 3%;
+      margin-left: 0;
+    }
+
+    #yop{
+      position: relative;
+      width: 40%;
+      left: 10%;
+      margin-top: 2%;
+    }
+
+    #infoart img{
+      display: none;
+    }
+
+    #infoart p{
+      margin-right: 10%;
+      margin-left: 0;
+      margin-bottom: 30pt;
+      text-align: justify;
+    }
+
+    #info img{
+      width: 20%;
+    }
+
+    #proyecto img >.animation img{
+      max-width: 90%;
+      margin: 7%;
+      margin-left: 7%;
+    }
+
+    #dibujos{
+      border-left: 0px solid #ffffff;
+      margin-left: 5%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #dibujos div{
+      width: 90%;
+    }
+
+    .infanta{
+      width: 60%;
+      position: absolute;
+      top: -6%;
+      left: -10%;
+      padding: 2%
+    }
+
+    .animation{
+      /* width: 90%; */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .animation img{
+      width: 70%;
+      margin-bottom: 3%;
+    }
+
+    .datos{
+      width: 120%;
+      margin-left: 10%;
+    }
+  
+    .back-to-top{
+      display: none;
+    }
+
+    footer{
+      height: 140px;
+      padding: 60px 70px;
+      margin-top: 1%;
+      bottom:  0;
+      font-size: 26pt;
+      margin-bottom: 220px;
+      text-align: left;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      border-top: 2px solid #000000;
+      clear: both; /* Asegura que ningún contenido flote a su alrededor */
+    }
+    
+    .span0{
+      text-align: left;
+      margin-bottom: 5%;
+    }
+    
+    .span1{
+      text-align: left;
+      margin-bottom: 5%;
+    }
+    
+    .span2{
+      text-align: left;
+      margin-bottom: 5%;
+    }
+  }
+  
+  /* fonts!! */
+  
+  @font-face {
+    font-family: Helvetica Neue Regular;
+    src: url(fonts/HelveticaNeueRoman.otf);
+  }
+  
+  @font-face {
+    font-family: Helvetica Neue Italic;
+    src: url(fonts/HelveticaNeueItalic.ttf);
+  }
+  
+  @font-face {
+    font-family: Helvetica Neue Thin Italic;
+    src: url(fonts/HelveticaNeueThinItalic.otf);
+  }
+  

@@ -1,0 +1,190 @@
+ffmpeg version 4.3.1-2020-11-19-essentials_build-www.gyan.dev Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 10.2.0 (Rev5, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      56. 51.100 / 56. 51.100
+  libavcodec     58. 91.100 / 58. 91.100
+  libavformat    58. 45.100 / 58. 45.100
+  libavdevice    58. 10.100 / 58. 10.100
+  libavfilter     7. 85.100 /  7. 85.100
+  libswscale      5.  7.100 /  5.  7.100
+  libswresample   3.  7.100 /  3.  7.100
+  libpostproc    55.  7.100 / 55.  7.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/Usuario/AppData/Local/Temp/KritaFFmpegProgress.ApBEwt'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '24'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame%04d.png'.
+Reading option '-vf' ... matched as option 'vf' (set video filters) with argument 'palettegen'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/palette.png' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/Usuario/AppData/Local/Temp/KritaFFmpegProgress.ApBEwt.
+[file @ 0000026d23a2d900] Setting default whitelist 'file,crypto,data'
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 24.
+Successfully parsed a group of options.
+Opening an input file: C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame%04d.png.
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0000.png' for reading
+[file @ 0000026d23a71b00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a79d00] Statistics: 238985 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0001.png' for reading
+[file @ 0000026d23a78940] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a78b00] Statistics: 238985 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0002.png' for reading
+[file @ 0000026d23a78a00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a78d40] Statistics: 241861 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0003.png' for reading
+[file @ 0000026d23a78a00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a78f00] Statistics: 241861 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0004.png' for reading
+[file @ 0000026d23a78a00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a790c0] Statistics: 240840 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0005.png' for reading
+[file @ 0000026d23a78a00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a79280] Statistics: 237595 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0006.png' for reading
+[file @ 0000026d23a78a00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a79440] Statistics: 245802 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0007.png' for reading
+[file @ 0000026d23a78a00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a71bc0] Statistics: 245802 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0008.png' for reading
+[file @ 0000026d23a71bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a71cc0] Statistics: 248773 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0009.png' for reading
+[file @ 0000026d23a71bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a71cc0] Statistics: 254560 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0010.png' for reading
+[file @ 0000026d23a71c40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a72ec0] Statistics: 245511 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0011.png' for reading
+[file @ 0000026d23a72ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a72fc0] Statistics: 260904 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0012.png' for reading
+[file @ 0000026d23a72ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a72fc0] Statistics: 261028 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0013.png' for reading
+[file @ 0000026d23a72ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a72fc0] Statistics: 261672 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0014.png' for reading
+[file @ 0000026d23a72ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a72fc0] Statistics: 261672 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0015.png' for reading
+[file @ 0000026d23a72ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a72fc0] Statistics: 260383 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0016.png' for reading
+[file @ 0000026d23a72ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a72fc0] Statistics: 276496 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0017.png' for reading
+[file @ 0000026d23a72ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a72fc0] Statistics: 276496 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0018.png' for reading
+[file @ 0000026d23a72ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a72fc0] Statistics: 264431 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0019.png' for reading
+[file @ 0000026d23a72ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23a72fc0] Statistics: 264431 bytes read, 0 seeks
+[image2 @ 0000026d23a6e480] Probe buffer size limit of 5000000 bytes reached
+Input #0, image2, from 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame%04d.png':
+  Duration: 00:00:01.12, start: 0.000000, bitrate: N/A
+    Stream #0:0, 20, 1/25: Video: png, 1 reference frame, rgba(pc), 1429x1080 [SAR 3937:3937 DAR 1429:1080], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: output url C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/palette.png.
+Applying option vf (set video filters) with argument palettegen.
+Successfully parsed a group of options.
+Opening an output file: C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/palette.png.
+Successfully opened the file.
+detected 12 logical cores
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> png (native))
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 12 times
+[graph 0 input from stream 0:0 @ 0000026d2461b840] Setting 'video_size' to value '1429x1080'
+[graph 0 input from stream 0:0 @ 0000026d2461b840] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 0:0 @ 0000026d2461b840] Setting 'time_base' to value '1/24'
+[graph 0 input from stream 0:0 @ 0000026d2461b840] Setting 'pixel_aspect' to value '3937/3937'
+[graph 0 input from stream 0:0 @ 0000026d2461b840] Setting 'frame_rate' to value '24/1'
+[graph 0 input from stream 0:0 @ 0000026d2461b840] w:1429 h:1080 pixfmt:rgba tb:1/24 fr:24/1 sar:3937/3937
+[format @ 0000026d23a79380] Setting 'pix_fmts' to value 'rgb24|rgba|rgb48be|rgba64be|pal8|gray|ya8|gray16be|ya16be|monob'
+[auto_scaler_0 @ 0000026d23acad40] Setting 'flags' to value 'bicubic'
+[auto_scaler_0 @ 0000026d23acad40] w:iw h:ih flags:'bicubic' interl:0
+[Parsed_palettegen_0 @ 0000026d22247440] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_palettegen_0'
+[auto_scaler_1 @ 0000026d23aca240] Setting 'flags' to value 'bicubic'
+[auto_scaler_1 @ 0000026d23aca240] w:iw h:ih flags:'bicubic' interl:0
+[format @ 0000026d23a79380] auto-inserting filter 'auto_scaler_1' between the filter 'Parsed_palettegen_0' and the filter 'format'
+[AVFilterGraph @ 0000026d246ea580] query_formats: 4 queried, 1 merged, 2 already done, 0 delayed
+[auto_scaler_1 @ 0000026d23aca240] picking rgba out of 10 ref:bgra alpha:1
+[swscaler @ 0000026d24a0cf80] Forcing full internal H chroma due to odd output size
+[swscaler @ 0000026d24a0cf80] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 0000026d23acad40] w:1429 h:1080 fmt:rgba sar:3937/3937 -> w:1429 h:1080 fmt:bgra sar:1/1 flags:0x4
+[swscaler @ 0000026d292200c0] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 0000026d23aca240] w:16 h:16 fmt:bgra sar:1/1 -> w:16 h:16 fmt:rgba sar:1/1 flags:0x4
+Output #0, image2, to 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/palette.png':
+  Metadata:
+    encoder         : Lavf58.45.100
+    Stream #0:0, 0, 1/24: Video: png, 1 reference frame, rgba, 16x16 [SAR 1:1 DAR 1:1], 0/1, q=2-31, 200 kb/s, 24 fps, 24 tbn, 24 tbc
+    Metadata:
+      encoder         : Lavc58.91.100 png
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 7 times
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0020.png' for reading
+[file @ 0000026d23a78b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23acbd40] Statistics: 264431 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0021.png' for reading
+[file @ 0000026d23a78b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23acc280] Statistics: 255823 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0022.png' for reading
+[file @ 0000026d23a78b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23acbc00] Statistics: 255823 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0023.png' for reading
+[file @ 0000026d23a78b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23acb6c0] Statistics: 241975 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0024.png' for reading
+[file @ 0000026d23a78b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23acc140] Statistics: 241975 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0025.png' for reading
+[file @ 0000026d23a78b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23acbd40] Statistics: 241975 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0026.png' for reading
+[file @ 0000026d23a78b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23acb940] Statistics: 237995 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0000026d23a6e480] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame0027.png' for reading
+[file @ 0000026d23a78b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23acbac0] Statistics: 237995 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 12 times
+[Parsed_palettegen_0 @ 0000026d22247440] 255(+1) colors generated out of 5585 colors; ratio=0.045658
+[Parsed_palettegen_0 @ 0000026d22247440] Dupped color: FF000000
+[Parsed_palettegen_0 @ 0000026d22247440] Dupped color: FF010101
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+Clipping frame in rate conversion by 0.000008
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[out_0_0 @ 0000026d23a78cc0] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+[image2 @ 0000026d23a70d40] Opening 'C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/palette.png' for writing
+[file @ 0000026d23a78b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026d23acbc00] Statistics: 0 seeks, 1 writeouts
+frame=    1 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.04 bitrate=N/A speed=0.184x    
+[AVIOContext @ 0000026d23a6e340] Statistics: 0 seeks, 1 writeouts
+video:1kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Input file #0 (C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/frame%04d.png):
+  Input stream #0:0 (video): 28 packets read (7046080 bytes); 28 frames decoded; 
+  Total: 28 packets (7046080 bytes) demuxed
+Output file #0 (C:/Users/Usuario/Desktop/DISEÑO/00_PORTFOLIO/PORTFOLIO WEB/HTML_PORTFOLIO/images/art/palette.png):
+  Output stream #0:0 (video): 1 frames encoded; 1 packets muxed (1007 bytes); 
+  Total: 1 packets (1007 bytes) muxed
+28 frames successfully decoded, 0 decoding errors

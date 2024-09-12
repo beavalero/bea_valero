@@ -1,0 +1,378 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica Neue Regular;
+    cursor: url(images/circle-cursor.png), auto;
+}
+
+main{
+    /* background-color: rgb(0, 255, 38); */
+    width: calc(80%);
+    height: calc(100%);
+    margin: 0 auto;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.main-image{
+    width: 300px;
+    border: solid 3px red
+}
+
+.main-image:hover{
+    cursor: url(images/circle-cursor-hover.png), auto;
+}
+
+p{
+    margin: calc(34%);;
+}
+
+#nombre{
+    font-family: Helvetica Neue Thin Italic;
+    font-size: 25pt;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    transform: scaleY(3);
+}
+
+#nombre:hover{
+    color: red;
+}
+
+.flecha{
+    width: 2%;
+    height: 1%;
+}
+
+p.texto{
+    margin-top: 2%;
+    margin-bottom: 1px;
+    text-align: justify;
+    font-size: 11pt;
+}
+
+#bloque2{
+    position: absolute;
+    /* background-color: aqua; */
+    width: 320px;
+    height: 320px;
+    /* top: 80px;
+    left: 610px; */
+    opacity: 20%;
+    margin: 0;
+    padding: 0;
+    font-size: 15pt;
+}
+
+#bloque2:hover{
+    opacity: 100%;
+}
+
+#bloque2 img{
+    margin-left: -30px;
+    margin-top: -20px;
+    z-index: 1000;
+}
+
+/* .linea1{
+    width: 150px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(20deg);
+    position: relative;
+    left: -160px;
+    top: -330px; 
+}
+
+.text1{
+    position: relative;
+    left: -360px;
+    top: -376px; 
+}
+
+.text2{
+    position: relative;
+    left: 500px;
+    top: -60px; 
+}
+
+.text3{
+    position: relative;
+    left: -350px;
+    top: 80px; 
+}
+
+.text4{
+    position: relative;
+    left: -540px;
+    top: -266px; 
+} */
+
+/* links!! */
+
+
+a{
+    text-decoration: none;
+    cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
+}
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    text-decoration: line-through;
+}
+
+#links{
+    /* border: 5px solid gold; */
+    width: auto ;
+    /* position: absolute; */
+}
+
+/* LÍNEAS */
+.linea-roja1 {
+    width: 270px;
+    height: 2px;
+    background-color: red;
+    transform: rotate(-11deg);
+    position: absolute;
+    top: 49%;
+    left: 20%;
+}
+
+.linea-roja2 {
+    width: 210px;
+    height: 2px;
+    background-color: red;
+    transform: rotate(-40deg);
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
+
+.linea-roja3 {
+    width: 270px;
+    height: 2px;
+    background-color: red;
+    transform: rotate(12deg);
+    position: absolute;
+    top: 84%;
+    left: 50%;
+}
+
+#design{
+    font-size: 20pt;
+    position: absolute;
+    top: 51%;
+    left: 14%;
+}
+
+#music{
+    font-size: 20pt;
+    position: absolute;
+    top: 7%;
+    left: 73%;
+}
+
+#ilu{
+    font-size: 20pt;
+    position: absolute;
+    top: 84%;
+    left: 69%;
+}
+
+/* fonts!! */
+
+@font-face {
+    font-family: Helvetica Neue Regular;
+    src: url(fonts/HelveticaNeueRoman.otf);
+}
+
+@font-face {
+    font-family: Helvetica Neue Italic;
+    src: url(fonts/HelveticaNeueItalic.ttf);
+}
+
+@font-face {
+    font-family: Helvetica Neue Thin Italic;
+    src: url(fonts/HelveticaNeueThinItalic.otf);
+}
+
+/* RESPONSIVE */
+@media(max-width:1128px){
+    .main{
+        margin-top: 30px;
+    }
+    .bloque{
+        width: 300px;
+        height: 100px;
+        position: relative;
+    }
+
+    .main-image{
+        width: calc(60%);
+    }
+
+    #nombre{
+        font-size: 40pt;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .flecha{
+        width: 40px;
+        height: 35px;
+    }
+
+    p.texto{
+        margin: calc(10%);
+        font-size: 20pt;
+        margin-top: 7%;
+    }
+
+    #links{
+        height: 250px;
+        /* margin-top: -5%; */
+        margin-bottom: 20%;
+        position: relative;
+    }
+
+    #links a{
+        font-size: 25pt;
+    }
+
+    #music{
+        position: absolute;
+        top: 90%;
+        left: 45%;
+    }
+
+    #design{
+        position: absolute;
+        top: 60%;
+        left: 10%;
+    }
+
+    #ilu{
+        position: absolute;
+        top: 30%;
+        left: 75%;
+    }
+
+    .linea-roja1{
+        width: 30%;
+        height: 2%;
+        transform: rotate(135deg);
+        position: absolute;
+        top: 15%;
+        left: 18%;
+    }
+
+    .linea-roja2{
+        width: 30%;
+        height: 2%;
+        transform: rotate(82deg);
+        position: absolute;
+        top: 40%;
+        left: 35%;
+    }
+
+    .linea-roja3{
+        width: 30%;
+        height: 2%;
+        transform: rotate(20deg);
+        position: absolute;
+        top: 6%;
+        left: 55%;
+    }
+}
+
+/* @media(max-width:475px){
+    .main{
+        margin-top: 30px;
+    }
+    .bloque{
+        width: 300px;
+        height: 100px;
+        position: relative;
+    }
+
+    .main-image{
+        width: calc(75%);
+    }
+
+    #nombre{
+        font-size: 16pt;
+    }
+    .flecha{
+        width: 20px;
+        height: 15px;
+    }
+
+    p{
+        margin: calc(10%);;
+    }
+
+    p.texto{
+        font-size: 9pt;
+    }
+
+    #links{
+        position: relative;
+    }
+
+    #links a{
+        font-size: 40px;
+    }
+
+    #music{
+        position: absolute;
+        top: 140px;
+        left: 160px;
+    }
+
+    #design{
+        position: absolute;
+        top: 100px;
+        left: 20px;
+    }
+
+    #ilu{
+        position: absolute;
+        top: 60px;
+        left: 260px;
+    }
+
+    .linea-roja1{
+        width: 120px;
+        transform: rotate(135deg);
+        position: absolute;
+        top: 50px;
+        left: 30px;
+    }
+
+    .linea-roja2{
+        width: 120px;
+        transform: rotate(82deg);
+        position: absolute;
+        top: 73px;
+        left: 100px;
+    }
+
+    .linea-roja3{
+        width: 140px;
+        transform: rotate(14deg);
+        position: absolute;
+        top: 30px;
+        left: 180px;
+    }
+} */
