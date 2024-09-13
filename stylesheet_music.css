@@ -139,6 +139,10 @@ body{
     z-index: 900; /* Asegura que el div sticky esté por debajo del header */
 }
 
+#info p{
+  font-size: 70pt;
+}
+
 h3{
   margin-top: 5pt;
   font-family: Helvetica Neue Italic;
@@ -458,6 +462,12 @@ html[lang="es"] [data-lang="es"] {
 
   /* RESPONSIVE */
 
+@media(max-width:600px){
+  #info p{
+    font-size: 30pt;
+  }
+}
+
 @media(max-width:1200px){
   /* HEADER */
   header{
@@ -567,6 +577,7 @@ html[lang="es"] [data-lang="es"] {
     margin-left: 3%;
     padding: 25px;
   }
+
 
   #info img{
     width: 5%;
@@ -760,4 +771,24 @@ footer{
 @font-face {
   font-family: Femme Fatale;
   src: url(fonts/SK\ Femme\ Fatale\ Trial.ttf);
+}
+
+
+
+/* / Small devices (portrait tablets and large phones, 600px and up) / */
+@media only screen and (min-width: 600px) {
+  #info p{
+    font-size: 200pt;
+  }
+}
+
+/* / Medium devices (landscape tablets, 768px and up) / */
+@media only screen and (min-width: 768px) {
+  #info p{
+    font-size: 30pt;    
+  }
+
+  #info h1{
+    font-size: 40pt;
+  }
 }
