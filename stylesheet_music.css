@@ -19,6 +19,7 @@ header{
     align-items: center;
     z-index: 1000;
     border-bottom: 2px solid #ff0000;
+   
 }
 
 #home{
@@ -140,7 +141,7 @@ body{
 }
 
 #info p{
-  font-size: 70pt;
+  font-size: 10pt;
 }
 
 h3{
@@ -462,294 +463,279 @@ html[lang="es"] [data-lang="es"] {
 
   /* RESPONSIVE */
 
-@media(max-width:600px){
-  #info p{
-    font-size: 30pt;
-  }
-}
 
-@media(max-width:1200px){
-  /* HEADER */
-  header{
-    background-color: white;
-    height: 90px;
-    padding: 10px 50px;
-    font-size: 30pt;
-    position: sticky;
-    top: 0;
+  @media (max-width:1200px){
+    /* HEADER */
+  
+  
+    .mostrar-menu,
+    .esconder-menu{
+      display: block;
+      font-size: 50pt;
+    }
+  
+    .menu{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: white;
+      right: -100%;
+      top: 0;
+      text-align: center;
+      padding: 100px 0px;
+      z-index: 100;
+      transition: 0.5s;
+    }
+  
+    label{
+      font-size: 50pt;
+    }
+  
+    .menu a{
+      display: block;
+      padding: 20px;
+    }
+  
+    .esconder-menu{
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+  
+    #check:checked ~ .menu{
+      right: 0;
+    }
+  
+    .lang-btn {
+      font-size: 24pt;
+    }
+  
+    /* MAIN */
+  
+    body{
+      background-color: #ffffff;
+    }
+  
+    #body2{
+      background-color: #ffffff;
+    }
+  
+    #main {
+      background-color: #ffffff;
+      flex-direction: column; /* Cambia a column para versiones móviles */
+    }
+  
+    #info, #proyecto, #diseño {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      margin-bottom: 30px; /* Espacio entre las secciones */
+      position: relative;
+      background-color: #ffffff;
+      border-left: 0px solid #ffffff;
+    }
+  
+    #diseño{
+      margin-top: 5%;
+      margin-left: 4%;
+      cursor: url(images/circle-cursor.png), auto;
+    }
+  
+    #diseño img{
+      /* margin-top: 3%; */
+      /* margin-right: 6%; */
+      cursor: url(images/circle-cursor.png), auto;
+    }
+  
+    #main img > .image2 {
+      width: 100%;
+      height: auto;
+    }
+  
+    #proyecto img{
+      max-width: 100%; /* Asegura que las imágenes no se desborden */
+      height: auto; /* Ajusta automáticamente la altura */
+    }
+  
+    #info{
+      margin-top: 3%;
+      margin-left: 3%;
+      padding: 25px;
+    }
+  
+
+  
+  
+  
+    #info img{
+      width: 5%;
+    }
+  
+    #poster_anim{
+      clip-path: inset(2% 5% 2% 5%);
+      margin-top: -3px;
+      margin-left: -5%;
+      margin-right: -2%;
+      width: 90%;
+    }
+  
+    .images-peque{
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+  
+    .images-peque2{
+      margin-top: 0%;
+      width: 58%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+  
+    .image2{
+      width: 53%;
+      margin-top: 2%;
+      margin-left: 1%;
+    }
+  
+    .pg{
+      width: 85%;
+      margin-left: 15%;
+      margin-top: 0%;
+      margin-bottom: 2%;
+    }
+  
+    .xenia{
+      clip-path: inset(14% 16% 14% 16%);
+    }
+  
+    .web{
+      width: 140%;
+      margin-bottom: 3%;
+      clip-path: inset(4.9% 13.8% 4.9% 13.8%);
+    }
+  
+    #cartel{
+      margin-top: 0%;
+      margin-left: 0%;
+    }
+  
+    #cartel3{
+      margin-top: 0%;
+      margin-left: 0%;
+    }
+  
+    .imagen-responsiva{
+      content: url('images/music/poster_anim2.gif');
+    }
+  
+    .imagen-responsiva2{
+      /* width: 200px; */
+      content: url('images/design/tfg/Mesa\ de\ trabajo\ 1\ copia\ 5-2.jpg');
+    }
+  
+    .imagen-responsiva3{
+      content: url('images/design/tfg/Mesa\ de\ trabajo\ 1\ copia\ 7-2.jpg');
+    }
+  
+    .imagen-responsiva4{
+      content: url('images/design/tfg/Mesa\ de\ trabajo\ 28.png');
+    }
+  
+    .linea-roja {
+      width: 100%;
+      height: 2px; /* Grosor de la línea */
+      background-color: red; /* Color de la línea */
+      margin: 0 auto; /* Ajusta los márgenes si es necesario */
+    }
+  
+    iframe{
+      width: 100%;
+      height: 450px;
+    }
+  
+    .back-to-top{
+      display: none;
+    }
+  
+  /* posters */
+  .image-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    border-bottom: 2px solid #ff0000;
-  }
-
-  .mostrar-menu,
-  .esconder-menu{
-    display: block;
-    font-size: 50pt;
-  }
-
-  .menu{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: white;
-    right: -100%;
-    top: 0;
-    text-align: center;
-    padding: 100px 0px;
-    z-index: 100;
-    transition: 0.5s;
-  }
-
-  label{
-    font-size: 50pt;
-  }
-
-  .menu a{
-    display: block;
-    padding: 20px;
-  }
-
-  .esconder-menu{
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-
-  #check:checked ~ .menu{
-    right: 0;
-  }
-
-  .lang-btn {
-    font-size: 24pt;
-  }
-
-  /* MAIN */
-
-  body{
-    background-color: #ffffff;
-  }
-
-  #body2{
-    background-color: #ffffff;
-  }
-
-  #main {
-    background-color: #ffffff;
-    flex-direction: column; /* Cambia a column para versiones móviles */
-  }
-
-  #info, #proyecto, #diseño {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    margin-bottom: 30px; /* Espacio entre las secciones */
     position: relative;
-    background-color: #ffffff;
-    border-left: 0px solid #ffffff;
-  }
-
-  #diseño{
-    margin-top: 5%;
-    margin-left: 4%;
-    cursor: url(images/circle-cursor.png), auto;
-  }
-
-  #diseño img{
-    /* margin-top: 3%; */
-    /* margin-right: 6%; */
-    cursor: url(images/circle-cursor.png), auto;
-  }
-
-  #main img > .image2 {
-    width: 100%;
-    height: auto;
-  }
-
-  #proyecto img{
-    max-width: 100%; /* Asegura que las imágenes no se desborden */
-    height: auto; /* Ajusta automáticamente la altura */
-  }
-
-  #info{
-    font-size: 16pt;
-    margin-top: 3%;
-    margin-left: 3%;
-    padding: 25px;
-  }
-
-
-  #info img{
-    width: 5%;
-  }
-
-  #poster_anim{
-    clip-path: inset(2% 5% 2% 5%);
-    margin-top: -3px;
-    margin-left: -5%;
-    margin-right: -2%;
-    width: 90%;
-  }
-
-  .images-peque{
+    height: 145vw; /* Ajusta la altura según tus necesidades */
     width: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-  }
-
-  .images-peque2{
-    margin-top: 0%;
-    width: 58%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-  }
-
-  .image2{
-    width: 53%;
     margin-top: 2%;
-    margin-left: 1%;
+    margin-left: 2%;
+    max-width: 50%;
   }
-
-  .pg{
-    width: 85%;
-    margin-left: 15%;
-    margin-top: 0%;
-    margin-bottom: 2%;
+  
+  .image-container img {
+    flex: 0 0 auto;
+    max-width: 60%; /* Para que ocupen cada una un tercio del contenedor */
+    position: absolute;
+    opacity: 0; /* Empezarán con opacidad 0 para luego aparecer */
+    /* transition: opacity 0.5s ease-in-out; */
   }
-
-  .xenia{
-    clip-path: inset(14% 16% 14% 16%);
+  
+  /* Ajusta las posiciones para que se solapen ligeramente */
+  .image-container img:nth-child(1) {
+    left: 3%;
+    top: 2%;
+    transform: rotate(3deg);
+    z-index: 1; /* La primera imagen debe estar más al frente */
   }
-
-  .web{
-    width: 140%;
-    margin-bottom: 3%;
-    clip-path: inset(4.9% 13.8% 4.9% 13.8%);
+  
+  .image-container img:nth-child(2) {
+    left: 98%;
+    top: 20%;
+    transform: rotate(-5deg);
+    z-index: 1;
   }
-
-  #cartel{
-    margin-top: 0%;
-    margin-left: 0%;
+  
+  .image-container img:nth-child(3) {
+    left: 18%;
+    top: 52%;
+    transform: rotate(7deg);
+    z-index: 2; /* La última imagen debe estar más atrás */
   }
-
-  #cartel3{
-    margin-top: 0%;
-    margin-left: 0%;
+  
+  /* Animación para hacer aparecer las imágenes una a una */
+  .image-container img.visible {
+    opacity: 3;
   }
-
-  .imagen-responsiva{
-    content: url('images/music/poster_anim2.gif');
+  
+  footer{
+    height: 140px;
+    padding: 60px 70px;
+    margin-top: 1%;
+    bottom:  0;
+    font-size: 26pt;
+    margin-bottom: 220px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 2px solid #000000;
+    clear: both; /* Asegura que ningún contenido flote a su alrededor */
   }
-
-  .imagen-responsiva2{
-    /* width: 200px; */
-    content: url('images/design/tfg/Mesa\ de\ trabajo\ 1\ copia\ 5-2.jpg');
+  
+  .span0{
+    text-align: left;
+    margin-bottom: 5%;
   }
-
-  .imagen-responsiva3{
-    content: url('images/design/tfg/Mesa\ de\ trabajo\ 1\ copia\ 7-2.jpg');
+  
+  .span1{
+    text-align: left;
+    margin-bottom: 5%;
   }
-
-  .imagen-responsiva4{
-    content: url('images/design/tfg/Mesa\ de\ trabajo\ 28.png');
+  
+  .span2{
+    text-align: left;
+    margin-bottom: 5%;
   }
-
-  .linea-roja {
-    width: 100%;
-    height: 2px; /* Grosor de la línea */
-    background-color: red; /* Color de la línea */
-    margin: 0 auto; /* Ajusta los márgenes si es necesario */
   }
-
-  iframe{
-    width: 100%;
-    height: 450px;
-  }
-
-  .back-to-top{
-    display: none;
-  }
-
-/* posters */
-.image-container {
-  display: flex;
-  position: relative;
-  height: 145vw; /* Ajusta la altura según tus necesidades */
-  width: 50%;
-  margin-top: 2%;
-  margin-left: 2%;
-  max-width: 50%;
-}
-
-.image-container img {
-  flex: 0 0 auto;
-  max-width: 60%; /* Para que ocupen cada una un tercio del contenedor */
-  position: absolute;
-  opacity: 0; /* Empezarán con opacidad 0 para luego aparecer */
-  /* transition: opacity 0.5s ease-in-out; */
-}
-
-/* Ajusta las posiciones para que se solapen ligeramente */
-.image-container img:nth-child(1) {
-  left: 3%;
-  top: 2%;
-  transform: rotate(3deg);
-  z-index: 1; /* La primera imagen debe estar más al frente */
-}
-
-.image-container img:nth-child(2) {
-  left: 98%;
-  top: 20%;
-  transform: rotate(-5deg);
-  z-index: 1;
-}
-
-.image-container img:nth-child(3) {
-  left: 18%;
-  top: 52%;
-  transform: rotate(7deg);
-  z-index: 2; /* La última imagen debe estar más atrás */
-}
-
-/* Animación para hacer aparecer las imágenes una a una */
-.image-container img.visible {
-  opacity: 3;
-}
-
-footer{
-  height: 140px;
-  padding: 60px 70px;
-  margin-top: 1%;
-  bottom:  0;
-  font-size: 26pt;
-  margin-bottom: 220px;
-  text-align: left;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: flex-start;
-  border-top: 2px solid #000000;
-  clear: both; /* Asegura que ningún contenido flote a su alrededor */
-}
-
-.span0{
-  text-align: left;
-  margin-bottom: 5%;
-}
-
-.span1{
-  text-align: left;
-  margin-bottom: 5%;
-}
-
-.span2{
-  text-align: left;
-  margin-bottom: 5%;
-}
-}
 
 /* fonts!! */
 
@@ -775,20 +761,57 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* / Small devices (portrait tablets and large phones, 600px and up) / */
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
   #info p{
-    font-size: 200pt;
+    font-size: 40pt;    
   }
 }
 
 /* / Medium devices (landscape tablets, 768px and up) / */
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   #info p{
     font-size: 30pt;    
   }
 
   #info h1{
     font-size: 40pt;
+  }
+
+  /* Cambio para que el header se quede como quieras en tablet y movil */
+  header{
+
+    height: 90px;
+    padding: 10px 50px;
+    font-size: 30pt;
+    
+  }
+}
+
+@media (min-width: 1200px) {
+  #info p{
+    font-size: 16pt;    
+  }
+
+  #info h1{
+    font-size: 40pt;
+  }
+
+  header{
+
+  font-size: 16pt;
   }
 }
