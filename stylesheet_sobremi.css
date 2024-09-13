@@ -425,7 +425,7 @@ html[lang="es"] [data-lang="es"] {
 
   @media(max-width:1200px){
     /* HEADER */
-    header{
+    /* header{
       background-color: white;
       height: 90px;
       padding: 10px 50px;
@@ -437,7 +437,7 @@ html[lang="es"] [data-lang="es"] {
       align-items: center;
       z-index: 1000;
       border-bottom: 2px solid #ff0000;
-    }
+    } */
   
     .mostrar-menu,
     .esconder-menu{
@@ -655,6 +655,67 @@ html[lang="es"] [data-lang="es"] {
       margin-bottom: 5%;
     }
   }
+
+
+
+
+/* / Small devices (portrait tablets and large phones, 600px and up) / */
+@media (min-width: 600px) {
+  #info p{
+    font-size: 40pt;    
+  }
+}
+
+/* / Medium devices (landscape tablets, 768px and up) / */
+@media (min-width: 768px) {
+  #info p{
+    font-size: 30pt;    
+  }
+
+  #infoart p{
+    font-size: 12pt;    
+  }
+
+  #info h1{
+    font-size: 40pt;
+  }
+
+  /* Cambio para que el header se quede como quieras en tablet y movil */
+  header{
+    height: 30px;
+    padding: 10px 50px;
+    /* font-size: 30pt; */
+    
+  }
+}
+
+@media (min-width: 1200px) {
+  #info p{
+    font-size: 12pt;    
+  }
+
+  #infoart p{
+    font-size: 12pt;    
+  }
+
+  #info h1{
+    font-size: 20pt;
+  }
+
+  header{
+    font-size: 14pt;
+  }
+}
+
+
+
+
+
+
+
+
+
+
   
   /* fonts!! */
   

@@ -466,6 +466,19 @@ html[lang="es"] [data-lang="es"] {
 
   @media (max-width:1200px){
     /* HEADER */
+
+    header{
+      background-color: white;
+      height: 40px;
+      padding: 0 40px;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      border-bottom: 2px solid #ff0000;
+    }
   
   
     .mostrar-menu,
@@ -560,10 +573,7 @@ html[lang="es"] [data-lang="es"] {
       margin-left: 3%;
       padding: 25px;
     }
-  
 
-  
-  
   
     #info img{
       width: 5%;
@@ -710,7 +720,7 @@ html[lang="es"] [data-lang="es"] {
     padding: 60px 70px;
     margin-top: 1%;
     bottom:  0;
-    font-size: 26pt;
+    font-size: 12pt;
     margin-bottom: 220px;
     text-align: left;
     display: flex;
@@ -737,6 +747,68 @@ html[lang="es"] [data-lang="es"] {
   }
   }
 
+
+
+
+
+
+
+
+
+/* / Small devices (portrait tablets and large phones, 600px and up) / */
+@media (min-width: 600px) {
+  #info p{
+    font-size: 30pt;    
+  }
+
+  #info h1{
+    font-size: 40pt;
+  }
+
+  
+}
+
+/* / Medium devices (landscape tablets, 768px and up) / */
+@media (min-width: 768px) {
+  #info p{
+    font-size: 25pt;    
+  }
+
+  #info h1{
+    font-size: 30pt;
+  }
+
+  /* Cambio para que el header se quede como quieras en tablet y movil */
+  header{
+    height: 30px;
+    padding: 10px 50px;
+    /* font-size: 30pt; */
+    
+  }
+}
+
+@media (min-width: 1200px) {
+  #info p{
+    font-size: 12pt;    
+  }
+
+  #info h1{
+    font-size: 20pt;
+  }
+
+  header{
+    font-size: 14pt;
+  }
+}
+
+
+
+
+
+
+
+
+
 /* fonts!! */
 
 @font-face {
@@ -757,61 +829,4 @@ html[lang="es"] [data-lang="es"] {
 @font-face {
   font-family: Femme Fatale;
   src: url(fonts/SK\ Femme\ Fatale\ Trial.ttf);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* / Small devices (portrait tablets and large phones, 600px and up) / */
-@media (min-width: 600px) {
-  #info p{
-    font-size: 40pt;    
-  }
-}
-
-/* / Medium devices (landscape tablets, 768px and up) / */
-@media (min-width: 768px) {
-  #info p{
-    font-size: 30pt;    
-  }
-
-  #info h1{
-    font-size: 40pt;
-  }
-
-  /* Cambio para que el header se quede como quieras en tablet y movil */
-  header{
-
-    height: 90px;
-    padding: 10px 50px;
-    font-size: 30pt;
-    
-  }
-}
-
-@media (min-width: 1200px) {
-  #info p{
-    font-size: 16pt;    
-  }
-
-  #info h1{
-    font-size: 40pt;
-  }
-
-  header{
-
-  font-size: 16pt;
-  }
 }
