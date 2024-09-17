@@ -106,7 +106,7 @@
   }
   
   body{
-    /* background-color: rgb(196, 176, 176); */
+    background-color: rgb(240, 240, 240);
     width: 100%;
     overflow-x: hidden;
   }
@@ -261,7 +261,7 @@ h2, h3{
 } */
 
   #proyecto{
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(240, 240, 240);
     width: 70%;
     padding: 2%;
     border-left: 2px solid #b4b4b4;
@@ -272,7 +272,7 @@ h2, h3{
 
   #dibujos{
     width: 70%;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(240, 240, 240);
       padding: 2%;
       border-left: 2px solid #b4b4b4;
       display: flex;
@@ -500,7 +500,7 @@ html[lang="es"] [data-lang="es"] {
       margin-bottom: 10px; /* Espacio entre las secciones */
       margin-left: 2%;
       position: relative;
-      /* background-color: #ffffff; */
+      background-color: #ffffff;
       border-left: 0px solid #ffffff;
     }
   
@@ -584,6 +584,7 @@ html[lang="es"] [data-lang="es"] {
     }
 
     #dibujos{
+      background-color: #ffffff;
       border-left: 0px solid #ffffff;
       margin-left: 5%;
       display: flex;
