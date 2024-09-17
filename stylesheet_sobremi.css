@@ -261,7 +261,7 @@ h2, h3{
 } */
 
   #proyecto{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(228, 228, 228);
     width: 70%;
     padding: 2%;
     border-left: 2px solid #b4b4b4;
@@ -272,6 +272,7 @@ h2, h3{
 
   #dibujos{
     width: 70%;
+    background-color: rgb(228, 228, 228);
       padding: 2%;
       border-left: 2px solid #b4b4b4;
       display: flex;
